@@ -1,0 +1,41 @@
+:root{
+    --primary-color: #ffe600;
+    --background-color: #eeeeee;
+    --grid-columns: 12;
+    --grid-width: 100%;
+}
+
+
+body {
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+.search-box {
+    display: flex;
+    background-color: var(--primary-color);
+    padding: 10px;
+    width: calc(100% / var(--grid-columns) * 10);
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.container-search {
+    display: flex;
+    justify-content: flex-end;
+    width: calc(100% / 12 * 10);
+}
+.container-search input {
+    width: calc(100% / 10 * 10);
+    padding: 10px;
+    border: none;
+}
+.container-search button {
+    border: none;
+}
+
+.app {
+    max-width: 100%;
+    margin: 0 auto;
+}
