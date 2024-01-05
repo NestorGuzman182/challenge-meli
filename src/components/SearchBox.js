@@ -9,7 +9,7 @@ const SearchBox = () => {
 
     const handleSearch = () => {
         if (query.trim() !== '') {
-            navigate.push(`/items?search=${query}`);
+            navigate(`/items?search=${query}`);
         }
     };
 
@@ -19,7 +19,7 @@ const SearchBox = () => {
             <div className="container-search">
                 <input type="text" placeholder='Nunca dejes de buscar' value={query} onChange={(e) => setQuery(e.target.value)} />
                 <button onClick={handleSearch}>
-                    <img src={searchbtn} />
+                    <img src={searchbtn} alt="buscar"/>
                 </button>
             </div>
         </div>

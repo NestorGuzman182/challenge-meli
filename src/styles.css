@@ -5,7 +5,6 @@
     --grid-width: 100%;
 }
 
-
 body {
     background-color: var(--background-color);
     margin: 0;
@@ -16,23 +15,36 @@ body {
     display: flex;
     background-color: var(--primary-color);
     padding: 10px;
-    width: calc(100% / var(--grid-columns) * 10);
-    text-align: center;
+    width: calc(100% / var(--grid-columns) * 12);
+    justify-content: center;
     align-items: center;
     margin: 0 auto;
 }
+
+.search-box img{
+    margin-right: 20px;
+}
+
 .container-search {
     display: flex;
     justify-content: flex-end;
-    width: calc(100% / 12 * 10);
+    width: calc(100% / 14 * 10);
 }
 .container-search input {
     width: calc(100% / 10 * 10);
     padding: 10px;
+    border-radius: 2px 0px 0px 2px;
     border: none;
 }
 .container-search button {
+    cursor: pointer;
+    width: 38px;
     border: none;
+    border-radius: 0px 2px 2px 0px;
+}
+
+.container-search button img {
+    margin: auto;
 }
 
 .app {

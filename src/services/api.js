@@ -1,9 +1,9 @@
 import axios from 'axios';
 
-const baseURL = 'https://api.mercadolibre.com'
+//const baseURL = 'https://api.mercadolibre.com'
 
 const api = axios.create({
-  baseURL,
+  baseURL: 'https://api.mercadolibre.com',
 });
 
 export const searchItems = async (query) => {
@@ -34,7 +34,7 @@ export const searchItems = async (query) => {
             items,
           };
     } catch (error) {
-        console.error('Error al consultar resultados', error);
+        console.error('Error al consultar resultados', error.response?.data || error.message);
         throw error;
     }
 }
@@ -51,8 +51,8 @@ export const getProductDetails = async (id) => {
   
       return {
         author: {
-          name: 'TuNombre',
-          lastname: 'TuApellido',
+          name: 'Nestor',
+          lastname: 'Guzman',
         },
         item: {
           id: item.id,
@@ -62,7 +62,7 @@ export const getProductDetails = async (id) => {
             amount: Math.floor(item.price),
             decimals: item.price % 1 !== 0 ? Math.round((item.price % 1) * 100) : 0,
           },
-          picture: item.pictures[0].url,
+          picture: item.pictures[0]?.url,
           condition: item.condition,
           free_shipping: item.shipping.free_shipping,
           sold_quantity: item.sold_quantity,
