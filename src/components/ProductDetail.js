@@ -1,34 +1,27 @@
-import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
-import api from '../services/api';
+import React from 'react';
 
-const ProductDetail = () => {
-    const { id } = useParams();
-    const [product, setProduct] = useState(null);
-    useEffect(() => {
-        const fetchProductDetails = async () => {
-          try {
-            const response = await api.get(`/api/items/${id}`);
-            setProduct(response.data.item);
-          } catch (error) {
-            console.error('Error fetching product details', error);
-          }
-        };
+const ProductDetail = ({ product }) => {
 
-        fetchProductDetails();
-    }, [id]);
   return (
     <div className="product-detail">
        {product && (
         <div>
-          <img src={product.picture} alt={product.title} />
           <div>
-            <h2>{product.title}</h2>
-            <p>{product.price.currency} {product.price.amount}</p>
-            {product.free_shipping && <p>Free Shipping</p>}
-            <p>Condition: {product.condition}</p>
-            <p>Sold Quantity: {product.sold_quantity}</p>
-            <p>{product.description}</p>
+            <div className='product'>
+              <img src={product.picture} alt={product.title} />
+              <div className="buy-product">
+                <h2>{product.title}</h2>
+                <p>{product.price.currency} {product.price.amount}</p>
+                {product.free_shipping && <p>Free Shipping</p>}
+                <p>Condition: {product.condition}</p>
+                <p>Sold Quantity: {product.sold_quantity}</p>
+                <button className='call-to-action'>Comprar</button>
+              </div>
+            </div>
+            <div className='product-description'>
+              <h2>Descripción del producto</h2>
+              <p>{product.description}</p>
+            </div>
           </div>
         </div>
       )}
