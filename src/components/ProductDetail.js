@@ -2,19 +2,27 @@ import React from 'react';
 
 const ProductDetail = ({ product }) => {
 
+  const translate = {
+    condition: {
+      'new': 'Nuevo',
+      'used': 'Usado'
+    }
+  }
+
+
   return (
     <div className="product-detail">
-       {product && (
+       { product && (
         <div>
           <div>
             <div className='product'>
               <img src={product.picture} alt={product.title} />
               <div className="buy-product">
-                <h2>{product.title}</h2>
-                <p>{product.price.currency} {product.price.amount}</p>
-                {product.free_shipping && <p>Free Shipping</p>}
-                <p>Condition: {product.condition}</p>
-                <p>Sold Quantity: {product.sold_quantity}</p>
+                <span>{translate.condition[product.condition]} - {product.sold_quantity}</span>
+                <h3>{product.title}</h3>
+                <div className="price"> 
+                  <span className="integer-part">$ {product.price.amount.toLocaleString('es-AR')}</span> 
+                </div>
                 <button className='call-to-action'>Comprar</button>
               </div>
             </div>

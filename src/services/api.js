@@ -53,8 +53,8 @@ export const getProductDetails = async (id) => {
   
       return {
         author: {
-          name: 'Nestor',
-          lastname: 'Guzman',
+          name: 'Néstor',
+          lastname: 'Guzmán',
         },
         item: {
           id: item.id,

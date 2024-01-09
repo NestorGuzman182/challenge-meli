@@ -143,6 +143,15 @@ body {
     padding: 16px;
 }
 
+.buy-product h3 {
+    font-size: 24px;
+}
+
+.buy-product h1 {
+    font-size: 46px;
+    font-weight: 500;
+}
+
 .product-description {
     width: calc(100% / var(--grid-columns)*7);
     padding: var(--secondary-space);
@@ -159,8 +168,13 @@ body {
     border: none;
     border-radius: 4px;
     margin-right: var(--secondary-space);
+    margin-top: var(--secondary-space);
     background: var(--secondary-color);
     color: var(--background-color);
+}
+
+.integer-part{
+    font-size: 46px;
 }
 
 .app {

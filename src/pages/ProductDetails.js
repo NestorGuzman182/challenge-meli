@@ -13,10 +13,15 @@ const ProductDetails = () => {
     const fetchProductDetails = async () => {
       try {
         const response = await getProductDetails(id);
-        console.log('Detalle del producto:', response);
         setProduct(response.item);
+
+        if (response.item && response.item.category) {
+          const categoryHierarchy = response.item.category.split('>');
+          const formattedBreadcrumb = categoryHierarchy.map(category => category.trim()).join(' > ');
+          setBreadcrumb(formattedBreadcrumb);
+        }
       } catch (error) {
-        console.error('Error fetching product details', error);
+        console.error('Error al obtener detalels del producto', error);
       }
     };
 
