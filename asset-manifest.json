@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/challenge-meli/static/css/main.cfd1f336.css",
-    "main.js": "/challenge-meli/static/js/main.9f2071a8.js",
+    "main.css": "/challenge-meli/static/css/main.4520f5c3.css",
+    "main.js": "/challenge-meli/static/js/main.dde60b7b.js",
     "static/js/787.9bd7f999.chunk.js": "/challenge-meli/static/js/787.9bd7f999.chunk.js",
     "index.html": "/challenge-meli/index.html",
-    "main.cfd1f336.css.map": "/challenge-meli/static/css/main.cfd1f336.css.map",
-    "main.9f2071a8.js.map": "/challenge-meli/static/js/main.9f2071a8.js.map",
+    "main.4520f5c3.css.map": "/challenge-meli/static/css/main.4520f5c3.css.map",
+    "main.dde60b7b.js.map": "/challenge-meli/static/js/main.dde60b7b.js.map",
     "787.9bd7f999.chunk.js.map": "/challenge-meli/static/js/787.9bd7f999.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cfd1f336.css",
-    "static/js/main.9f2071a8.js"
+    "static/css/main.4520f5c3.css",
+    "static/js/main.dde60b7b.js"
   ]
 }
