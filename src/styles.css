@@ -5,6 +5,7 @@
     --black: #333333;
     --dark-gray: #666666;
     --light-gray: #999999;
+    --white: #fff;
     --primary-space: 16px;
     --secondary-space: 32px;
     --grid-columns: 12;
@@ -177,7 +178,70 @@ body {
     font-size: 46px;
 }
 
+.section {
+    background: var(--white);
+    border-radius: 6px;
+}
+
 .app {
     max-width: 100%;
     margin: 0 auto;
 }
+h3 {
+    margin-left: var(--large);
+    padding: var(--large);
+}
+h3 span{
+    color: var(--secondary-color);
+    font-size: var(--small);
+    font-weight: 400;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li {
+    width: 200px;
+    height: 67px;
+    list-style: none;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid var(--background-color);
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.control-buttons {
+    position: absolute;
+    top: calc(100% / 2.3);
+    width: calc(100% / 12 * 6.6);
+    display: flex;
+    justify-content: space-between;
+}
+
+.control-buttons button{
+    position: relative;
+    cursor: pointer;
+    padding: 25px;
+    border-radius: 50%;
+    border-color: .5px solid var(--background-color);
+    background-color: var(--white);
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-size: var(--large);
+}
+
+.hidden{
+    opacity: 0;
+}
+
+.left-btn {
+    left: -30px
+}
+
+.right-btn {
+    right: -30px;
+}
+

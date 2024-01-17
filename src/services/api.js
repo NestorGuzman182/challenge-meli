@@ -75,6 +75,17 @@ export const getProductDetails = async (id) => {
       console.error('Error al consultar el detalle del producto', error);
       throw error;
     }
-  };
+};
+
+export const getCategories = async () => {
+  try {
+    const response = await api.get('/sites/MLA/');
+    const data = response.data;
+    return data.categories || [];
+  } catch(error) {
+      console.error('Error al consultar las categorias', error);
+      throw error;
+  }
+}
 
 export default api;
