@@ -19,11 +19,12 @@ const ProductDetail = ({ product }) => {
               <img src={product.picture} alt={product.title} />
               <div className="buy-product">
                 <span>{translate.condition[product.condition]} - {product.sold_quantity}</span>
-                <h3>{product.title}</h3>
+                <h3 className='product-title'>{product.title}</h3>
                 <div className="price"> 
                   <span className="integer-part">$ {product.price.amount.toLocaleString('es-AR')}</span> 
                 </div>
                 <button className='call-to-action'>Comprar</button>
+                <button className='btn-second'>Agregar el carrito</button>
               </div>
             </div>
             <div className='product-description'>

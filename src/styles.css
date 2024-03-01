@@ -145,6 +145,11 @@ body {
     cursor: pointer;
     user-select: none;
 }
+
+.product-title {
+    padding: 0 !important;
+    margin-left: 0 !important;
+}
   
 .buy-product {
     width: calc(100% / 12*3);
@@ -170,15 +175,24 @@ body {
     color: var(--light-gray)
 }
 
-.call-to-action {
+.call-to-action, .btn-second {
     width: 100%;
     padding: var(--small);
     border: none;
     border-radius: 4px;
     margin-right: var(--secondary-space);
+    font-weight: 700;
+}
+
+.call-to-action {
     margin-top: var(--secondary-space);
     background: var(--secondary-color);
     color: var(--background-color);
+}
+
+.btn-second {
+    margin-top: var(--primary-space);
+    color: var(--secondary-color)
 }
 
 .integer-part{
@@ -188,6 +202,7 @@ body {
 .section {
     background: var(--white);
     border-radius: 6px;
+    position: relative;
 }
 
 .app {
@@ -210,6 +225,7 @@ ul {
 }
 
 li {
+    display: flex;
     width: 200px;
     height: 67px;
     list-style: none;
@@ -220,17 +236,22 @@ li {
     font-weight: 600;
 }
 
+li div img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
 .control-buttons {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: calc(100% / 12 * 6.6);
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
 .control-buttons button{
-
     cursor: pointer;
     padding: 25px;
     border-radius: 50%;
@@ -246,10 +267,12 @@ li {
 }
 
 .left-btn {
+    position: relative;
     left: -30px
 }
 
 .right-btn {
+    position: relative;
     right: -30px;
 }
 
