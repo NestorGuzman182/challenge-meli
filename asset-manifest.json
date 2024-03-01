@@ -1,15 +1,22 @@
 {
   "files": {
-    "main.css": "/challenge-meli/static/css/main.4520f5c3.css",
-    "main.js": "/challenge-meli/static/js/main.dde60b7b.js",
+    "main.css": "/challenge-meli/static/css/main.04d02f53.css",
+    "main.js": "/challenge-meli/static/js/main.e9b4fd99.js",
     "static/js/787.9bd7f999.chunk.js": "/challenge-meli/static/js/787.9bd7f999.chunk.js",
+    "static/media/banner_2.webp": "/challenge-meli/static/media/banner_2.5e817d0bebb08bf1d161.webp",
+    "static/media/banner_3.webp": "/challenge-meli/static/media/banner_3.6d3b970fa824c65d4643.webp",
+    "static/media/banner_1.webp": "/challenge-meli/static/media/banner_1.18d60bbf28eaf7bce92e.webp",
+    "static/media/slick.svg": "/challenge-meli/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/challenge-meli/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/challenge-meli/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/challenge-meli/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/challenge-meli/index.html",
-    "main.4520f5c3.css.map": "/challenge-meli/static/css/main.4520f5c3.css.map",
-    "main.dde60b7b.js.map": "/challenge-meli/static/js/main.dde60b7b.js.map",
+    "main.04d02f53.css.map": "/challenge-meli/static/css/main.04d02f53.css.map",
+    "main.e9b4fd99.js.map": "/challenge-meli/static/js/main.e9b4fd99.js.map",
     "787.9bd7f999.chunk.js.map": "/challenge-meli/static/js/787.9bd7f999.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4520f5c3.css",
-    "static/js/main.dde60b7b.js"
+    "static/css/main.04d02f53.css",
+    "static/js/main.e9b4fd99.js"
   ]
 }
