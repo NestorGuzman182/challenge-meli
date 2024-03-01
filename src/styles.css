@@ -67,6 +67,13 @@ body {
     font-size: 14px; 
 }
 
+.banner-image{
+    max-width: 1598px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
 .search-result-item, .price, .product-detail, .product {
     display: flex;
     align-items: center;
@@ -215,14 +222,15 @@ li {
 
 .control-buttons {
     position: absolute;
-    top: calc(100% / 2.3);
+    top: 50%;
+    transform: translateY(-50%);
     width: calc(100% / 12 * 6.6);
     display: flex;
     justify-content: space-between;
 }
 
 .control-buttons button{
-    position: relative;
+
     cursor: pointer;
     padding: 25px;
     border-radius: 50%;
