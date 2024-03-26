@@ -32,8 +32,7 @@ const SearchResults = () => {
         }else {
           setBreadcrumb('')
         }
-        
-        console.log(items)
+
         setResults(items);
 
       } catch (error) {

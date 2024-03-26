@@ -1,7 +1,16 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
+import { addToCart } from '../redux/actions/cartActions';
+import cartIcon from '../assets/cart-icon.png';
 import shipping from '../assets/ic_shipping.png';
 
 const SearchResult = ({ results, onItemClick }) => {
+  const dispatch = useDispatch();
+
+  const handleAddToCart = (item) => {
+    dispatch(addToCart(item));
+  };
+
   return (
     <div className="search-results">
       {results && results.map(item => (
@@ -14,6 +23,7 @@ const SearchResult = ({ results, onItemClick }) => {
             </div>
             <p>{item.title}</p>
           </div>
+          <button className='btn-second cart-action' onClick={() => handleAddToCart(item)}>Agregar al carrito</button>
         </div>
       ))}
     </div>

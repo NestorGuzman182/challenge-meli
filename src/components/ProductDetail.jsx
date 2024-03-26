@@ -1,6 +1,13 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
+import { addToCart } from '../redux/actions/cartActions'; 
 
 const ProductDetail = ({ product }) => {
+
+  const dispatch = useDispatch();
+  const handleAddToCart = () => {
+    dispatch(addToCart(product));
+  };
 
   const translate = {
     condition: {
@@ -24,7 +31,7 @@ const ProductDetail = ({ product }) => {
                   <span className="integer-part">$ {product.price.amount.toLocaleString('es-AR')}</span> 
                 </div>
                 <button className='call-to-action'>Comprar</button>
-                <button className='btn-second'>Agregar el carrito</button>
+                <button className='btn-second' onClick={handleAddToCart}>Agregar el carrito</button>
               </div>
             </div>
             <div className='product-description'>
